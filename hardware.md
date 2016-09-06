@@ -3,11 +3,11 @@
 | Piece needed | Count | Source | Price (1) | Price * Count |
 | ------------ | ----: | ------ | --------: | ------------: |
 | [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | 3 | [de.farnell.com](http://de.farnell.com/raspberry-pi/raspberrypi3-modb-1gb/sbc-raspberry-pi-3-model-b-1gb/dp/2525225) | 31.41€ | 94.23€ |
-| [Micro SD 128GB UHS-3](https://en.wikipedia.org/wiki/Secure_Digital#Speeds) | 3 | [www.amazon.de](https://www.amazon.de/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B01DYN4VPE) | 56.99€ | 170.97€ |
+| Micro SD 32 GB UHS-1 | 3 | [www.amazon.de](https://www.amazon.de/SanDisk-Android-microSDHC-Speicherkarte-SD-Adapter/dp/B013UDL5RU/) | 10.99€ | 32.97€ |
 | USB charger | 1 | [www.amazon.de](https://www.amazon.de/Datenhub-Aluminium-Smart-Ladeports-Smartphones-USB-ladende/dp/B01E56Q6I4) | 59.99€ | 59.99€ |
 | USB->Micro USB cable | 3 | [www.amazon.de](https://www.amazon.de/Fenta-Charging-Datenkabel-Charger-Samsung/dp/B01LJYUJD8) | 1.76€ | 5.28€ |
 | Ethernet cable | 3 | [www.amazon.de](https://www.amazon.de/dp/B00V4ULBE4) | 3.39€ | 10.17€ |
-| Σ | 13 |  |  | 340.64€ |
+| Σ | 13 |  |  | 202.64€ |
 
 ## Notes
 
