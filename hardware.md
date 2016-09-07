@@ -1,17 +1,16 @@
 # Hardware
 
-| Piece needed | Count | Source | Price (1) | Price * Count |
-| ------------ | ----: | ------ | --------: | ------------: |
-| [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) | 3 | [de.farnell.com](http://de.farnell.com/raspberry-pi/raspberrypi3-modb-1gb/sbc-raspberry-pi-3-model-b-1gb/dp/2525225) | 31.41€ | 94.23€ |
-| Micro SD 32 GB UHS-1 | 3 | [www.amazon.de](https://www.amazon.de/SanDisk-Android-microSDHC-Speicherkarte-SD-Adapter/dp/B013UDL5RU/) | 10.99€ | 32.97€ |
-| USB charger | 1 | [www.amazon.de](https://www.amazon.de/Datenhub-Aluminium-Smart-Ladeports-Smartphones-USB-ladende/dp/B01E56Q6I4) | 59.99€ | 59.99€ |
-| USB->Micro USB cable | 3 | [www.amazon.de](https://www.amazon.de/Fenta-Charging-Datenkabel-Charger-Samsung/dp/B01LJYUJD8) | 1.76€ | 5.28€ |
-| Ethernet cable | 3 | [www.amazon.de](https://www.amazon.de/dp/B00V4ULBE4) | 3.39€ | 10.17€ |
-| Σ | 13 |  |  | 202.64€ |
+| Piece                         | Source                                                       | Price (1) | Count | Price * Count |
+| :---------------------------- | :----------------------------------------------------------- | --------: | ----: | ------------: |
+| ORICO® 60W 13 Port USB 3.0    | [www.amazon.de](https://www.amazon.de/gp/product/B01E56Q6I4) |    59.99€ |     1 |        59.99€ |
+| Raspberry Pi 3 Model B        | [www.amazon.de](https://www.amazon.de/gp/product/B01CEFWQFA) |    35.91€ |     3 |       107.73€ |
+| SanDisk microSDHC 32GB        | [www.amazon.de](https://www.amazon.de/gp/product/B013UDL5RU) |     9.99€ |     3 |        29.97€ |
+| 3 Kühlkörper für Raspberry Pi | [www.amazon.de](https://www.amazon.de/gp/product/B00EVJF4NY) |     4.49€ |     3 |        13.47€ |
+| GizzmoHeaven 0.5m Gelb Cat5e  | [www.amazon.de](https://www.amazon.de/gp/product/B00V4ULBE4) |     3.39€ |     3 |        10.17€ |
+| Fenta USB Charging Datenkabel | [www.amazon.de](https://www.amazon.de/gp/product/B01LJYUJD8) |     1.76€ |     3 |         5.28€ |
+| Σ                             |                                                              |   115.53€ |    16 |       226.61€ |
 
-## Notes
-
-### Power consumption:
+# Power consumption:
 
 Data from [FAQ](https://www.raspberrypi.org/help/faqs/#power):
 
