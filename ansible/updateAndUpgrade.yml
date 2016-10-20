@@ -1,0 +1,12 @@
+# Inspired by:
+# https://techsomnia.net/2013/11/ansible-apt-get-updateupgrade/
+# https://docs.ansible.com/ansible/apt_module.html
+- hosts: bananaGuards
+  remote_user: pi
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Update a server
+      apt: update_cache=yes
+    - name: Upgrade a server
+      apt: upgrade=dist
