@@ -1,0 +1,30 @@
+# Since this playbook performs the initial setup for our PIs,
+# they may not be part of our inventory yet.
+# To run this playbook against some hosts use a command like
+# ansible-playbook -i "bananaGuard02," initialSetup.yml
+# The trailing ',' in the inventory string is important
+# to make it distinguishable from a file.
+# Inspired by:
+# https://stackoverflow.com/a/18195217/448591
+- hosts: all
+  remote_user: pi
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Set authorized key for user pi
+      authorized_key:
+        user: pi
+        key: "{{ lookup('file', '/home/mushu/.ssh/bananaGuards.pub') }}"
+    - name: Disable password for user pi
+      command: /usr/bin/passwd -d pi
+    - name: Set hostname
+      hostname:
+        name: "{{ inventory_hostname }}"
+    - name: Update a server
+      apt: update_cache=yes
+    - name: Upgrade a server
+      apt: upgrade=dist
+    - name: Install vim
+      apt: name=vim state=present
+    - name: Install docker
+      apt: name=docker.io state=present
