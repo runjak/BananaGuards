@@ -7,32 +7,35 @@
 # Inspired by:
 # https://stackoverflow.com/a/18195217/448591
 - hosts: all
-  remote_user: pi
-  become: yes
-  become_method: sudo
+  remote_user: pirate
   tasks:
-    - name: Set authorized key for user pi
+    - name: Set authorized key for user pirate
       authorized_key:
-        user: pi
+        user: pirate
         key: "{{ lookup('file', '/home/mushu/.ssh/bananaGuards.pub') }}"
-    - name: Disable password for user pi
-      command: /usr/bin/passwd -d pi
-    - name: Set hostname
-      hostname:
-        name: "{{ inventory_hostname }}"
+    - name: Disable password for user pirate
+      become: yes
+      command: /usr/bin/passwd -d pirate
+    - name: Set /boot/device-init.yaml
+      become: yes
+      template:
+        src: templates/device-init.j2
+        dest: /boot/device-init.yaml
+        owner: root
+        group: root
+        mode: "u=rwx,g=rx,o=rx"
     - name: Updating package caches
+      become: yes
       apt: update_cache=yes
     - name: Upgrading machines
+      become: yes
       apt: upgrade=dist
     - name: Install vim
+      become: yes
       apt: name=vim state=present
-    - name: Install docker
-      apt: name=docker.io state=present
-    # Restarting host:
-    # https://support.ansible.com/hc/en-us/articles/201958037-Reboot-a-server-and-wait-for-it-to-come-back
     - name: Restart machine
+      become: yes
       shell: sleep 2 && shutdown -r now "Triggered by ansible playbook initialSetup.yml"
       async: 1
       poll: 0
-      sudo: true
       ignore_errors: true

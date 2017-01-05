@@ -2,7 +2,7 @@
 # https://techsomnia.net/2013/11/ansible-apt-get-updateupgrade/
 # https://docs.ansible.com/ansible/apt_module.html
 - hosts: bananaGuards
-  remote_user: pi
+  remote_user: pirate
   become: yes
   become_method: sudo
   tasks:
