@@ -1,4 +1,4 @@
 #!/bin/sh
 # See http://blog.hypriot.com/downloads/ for current images
-wget "https://downloads.hypriot.com/hypriotos-rpi-v1.0.0.img.zip"
-sha256sum -c hypriotos-rpi-v1.0.0.img.zip.sha256
+wget "https://github.com/hypriot/image-builder-rpi/releases/download/v1.1.3/hypriotos-rpi-v1.1.3.img.zip"
+sha256sum -c hypriotos-rpi-v1.1.3.img.zip.sha256
