@@ -1,0 +1,7 @@
+# See https://docs.docker.com/compose/compose-file/
+version: '2'
+
+services:
+
+  ipfs:
+    build: ./rpi-ipfs
