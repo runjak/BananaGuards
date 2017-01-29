@@ -33,6 +33,13 @@
     - name: Install vim
       become: yes
       apt: name=vim state=present
+    - name: Install git
+      become: yes
+      apt: name=git state=present
+    - name: Checkout git repo
+      git:
+        repo: https://github.com/runjak/BananaGuards.git
+        dest: /home/pirate/BananaGuards
     - name: Restart machine
       become: yes
       shell: sleep 2 && shutdown -r now "Triggered by ansible playbook initialSetup.yml"
