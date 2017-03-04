@@ -6,7 +6,6 @@ MAINTAINER Jakob Runge <sicarius@g4t3.de>
 #
 # Please keep these two Dockerfiles in sync.
 
-
 # Ports for Swarm TCP, Swarm uTP, API, Gateway
 EXPOSE 4001
 EXPOSE 4002/udp
