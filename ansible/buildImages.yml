@@ -1,0 +1,14 @@
+- hosts: bananaGuards
+  remote_user: pirate
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Checkout git repo
+      git:
+        repo: https://github.com/runjak/BananaGuards.git
+        dest: /home/pirate/BananaGuards
+        update: yes
+    - name: Build docker images using cache
+      command: docker-compose build
+      args:
+        chdir: /home/pirate/BananaGuards/docker
