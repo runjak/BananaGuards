@@ -4,4 +4,9 @@ version: '2'
 services:
 
   ipfs:
+    image: rpi-ipfs
     build: ./rpi-ipfs
+
+  boinc:
+    image: rpi-boinc
+    build: ./rpi-boinc
