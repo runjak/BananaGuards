@@ -22,6 +22,6 @@ RUN apk update \
  && cd boinc \
  && ./_autosetup \
  && ./configure --disable-server --enable-client CXXFLAGS="-O3 " \
- && make \
- && cd packages/generic/sea/ \
  && make
+# && cd packages/generic/sea/ \
+# && make
