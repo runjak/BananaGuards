@@ -5,7 +5,7 @@ MAINTAINER Jakob Runge <sicarius@g4t3.de>
 RUN apk update \
  && apk upgrade \
  && apk add \
-    git
+    git \
     make \
     m4 \
     pkgconfig \
